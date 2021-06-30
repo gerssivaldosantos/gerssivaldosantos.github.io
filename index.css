@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
 body{
-    font-family: sans-serif;
-    color: #1c1c1c
+    font-family: inconsolata, monospace;
+    color: #ffffff;
+    background-color: #202020;
 }
 
 h1, h2, h3 {
-    font-family: sans-serif;
-    color:rgba(0, 1, 40, 0.946)
+    font-family: inconsolata, monospace;
+    color: rgb(0, 195, 255);
 }
 
 nav{
@@ -20,7 +22,6 @@ nav{
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-weight: 800;
     font-size: 25px;
 }
 
@@ -37,6 +38,8 @@ nav ul {
 nav ul li {
     text-align: center;
     width: 100%;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
 
 }
 
@@ -49,14 +52,17 @@ nav ul li a {
 }
 
 .logo-title{
-    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Inconsolata', monospace;
     font-size: 40px;
+    font-weight: bolder;
+    color: rgb(0, 195, 255);
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     background-image: url(./assets/code03.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,17 +71,19 @@ header{
     padding: 40px;
     padding-top: 90px;
     padding-bottom: 90px;
-}
-
-header p {
-    border: solid 1px;
-    color: #ffffff;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.748);
     
 }
 
+
+
 header h1{
-    color: #1c1c1c;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+    font-size: 34px;
+    color:#ffffff
+}
+
+header p{
+    color: #ffffff;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: 500;
 }
