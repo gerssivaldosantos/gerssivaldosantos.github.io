@@ -8,21 +8,19 @@
 
 /* NavBar Styling */
 
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
-    margin: auto
+    margin: auto;
 }
-
 .navbar {
-    background-color: crimson;
+    background-color: rgb(43, 43, 58);
     position: fixed;
     width: 100%;
     font-family: "Ubuntu", sans-serif;
     padding: 15px 0;
 }
-
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,4 +39,32 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+}
+
+/* HOME SECTION STYLING */
+
+.home{
+    display: flex;
+    background: url("./assets/code03.jpg") no-repeat center;
+    height: 100vh;
+    color: #ffff;
+    min-height: 500px;
+    font-family: "Ubuntu", "sans-serif";
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
 }
