@@ -13,6 +13,7 @@ $(document).ready(function(){
     /* Animation navbar resposive toggle menu */
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active")
+        link = "./assets/linkedin.png"
     })
 
 

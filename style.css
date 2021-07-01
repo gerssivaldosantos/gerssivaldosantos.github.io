@@ -117,7 +117,13 @@
 }
 
 /* Responsive media query start */
+@media (max-width: 1200px) {
 
+    .home .max-width{
+        margin-left: 0px;
+    }
+
+}
 @media (max-width: 1050px) {
     .max-width {
         padding: 0 50px;
@@ -131,6 +137,8 @@
         padding: 0 50px;
     }
 
+ 
+
     .navbar .menu {
         position: fixed;
         height: 100vh;
@@ -140,6 +148,7 @@
         background: rgba(17, 17, 17, 0.966);
         text-align: center;
         padding-top: 80px;
+        transition: all 0.3s ease;
     }
     .navbar .menu.active{
         left:0;
@@ -151,5 +160,31 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 35px;
+        
+    }
+}
+
+@media (max-width: 690px) {
+
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 55px;
+        
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 29px;
+        
     }
 }
