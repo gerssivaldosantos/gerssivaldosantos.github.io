@@ -14,11 +14,15 @@
     margin: auto;
 }
 .navbar {
-    background-color: rgb(43, 43, 58);
+    transition: all 0.3s ease;
     position: fixed;
     width: 100%;
     font-family: "Ubuntu", sans-serif;
-    padding: 15px 0;
+    padding: 30px 0;
+}
+.navbar.sticky{
+    padding: 7px 0;
+    background: rgb(23, 114, 204);
 }
 .navbar .max-width {
     display: flex;
@@ -30,20 +34,39 @@
     font-size: 35px;
     font-weight: 600;
 }
+.navbar .logo a span{
+    color: dodgerblue;
+}
+
+.navbar.sticky .logo a span{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: dodgerblue;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: rgb(224, 224, 224);
 }
 
 /* HOME SECTION STYLING */
 
-.home{
+.home {
     display: flex;
     background: url("./assets/code03.jpg") no-repeat center;
     height: 100vh;
@@ -52,19 +75,26 @@
     font-family: "Ubuntu", "sans-serif";
 }
 
-.home .max-width{
-    margin: auto 0 auto 40px
+.home .max-width {
+    margin: auto 0 auto 40px;
 }
 
-.home .home-content .text-1{
+.home .home-content .text-1 {
     font-size: 27px;
 }
 
-.home .home-content .text-2{
+.home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
+    margin-left: -3px;
 }
 
-.home .home-content .text-1{
-    font-size: 27px;
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: dodgerblue;
+    font-weight: 500;
 }
