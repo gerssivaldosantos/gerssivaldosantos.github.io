@@ -4,13 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-   
 }
 
 /* NavBar Styling */
 
 .max-width {
-  
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -22,7 +20,7 @@
     font-family: "Ubuntu", sans-serif;
     padding: 30px 0;
 }
-.navbar.sticky{
+.navbar.sticky {
     padding: 7px 0;
     background: rgb(23, 114, 204);
 }
@@ -36,11 +34,11 @@
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo a span {
     color: dodgerblue;
 }
 
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
     color: rgb(255, 255, 255);
     transition: all 0.5s ease;
 }
@@ -60,9 +58,6 @@
 
 .navbar .menu li a img {
     width: 22px;
-
-    
-    
 }
 
 .navbar .menu li a:hover {
@@ -74,11 +69,15 @@
 }
 
 /* Menu NavBar Button Styling */
-.menu-btn{
-    color: #fff;
-    font-size: 40px;
+.menu-btn {
     cursor: pointer;
     display: none;
+}
+
+.fa-bars img {
+
+    width:25 px;
+    height: 25px;
 
 }
 
@@ -117,31 +116,39 @@
     font-weight: 500;
 }
 
-
 /* Responsive media query start */
 
-@media (max-width: 1050px){
-    .max-width{
-        padding:0 50px;
+@media (max-width: 1050px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn {
+        
+        display: block;
+        z-index: 999;
+    }
+    .max-width {
+        padding: 0 50px;
     }
 
-    .navbar .menu{
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
-        top:0;
-        background: #111 ;
+        left: -100%;
+        top: 0;
+        background: rgba(17, 17, 17, 0.966);
         text-align: center;
         padding-top: 80px;
     }
-
-    .navbar .menu li{
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li {
         display: block;
-        
     }
     .navbar .menu li a {
-        display:inline-block;
+        display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
