@@ -123,7 +123,13 @@
     font-size: 25px;
     padding: 12px 36px;
     border-radius: 6px;
-    border: 2px solid dodgerblue
+    border: 2px solid dodgerblue;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: dodgerblue;
+    background: none;
 }
 
 
@@ -165,6 +171,9 @@
     .navbar .menu.active{
         left:0;
     }
+
+    
+    
     .navbar .menu li {
         display: block;
     }
@@ -183,11 +192,22 @@
         font-size: 35px;
         
     }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px
+    }
 }
 
 @media (max-width: 565px) {
+    .navbar .menu.active li a{
+        
+        margin-top: 10px;
+    }
+
     .home .home-content a{
-        font-size: 22px;
+        font-size: 19px;
+        padding: 8px 20px
     }
     .max-width{
         padding: 0 30px;
@@ -202,6 +222,8 @@
         font-size: 27px;
         
     }
+
+    
 }
 
 @media (max-width: 300px) {
