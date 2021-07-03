@@ -134,6 +134,43 @@
 
 
 
+
+
+/* About section styling */
+section{
+    padding: 100px 0;
+}
+
+.about {
+    font-family: 'Poppins', 'sans-serif';
+
+}
+
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' 'sans-serif';
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    width: 221px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .about-content .left img{
+    height: 400px;
+    width:400px;
+    
+    object-fit: cover;
+}
+
 /* Responsive media query start */
 @media (max-width: 1200px) {
 
@@ -181,7 +218,9 @@
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+        
     }
+
 
     .home .home-content .text-2 {
         font-size: 70px;
