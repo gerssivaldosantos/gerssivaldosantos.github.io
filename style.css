@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+/* ALL */
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +7,17 @@
     text-decoration: none;
 }
 
-/* NavBar Styling */
-
+/* NAVIGATION BAR */
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 .navbar {
-    transition: all 0.3s ease;
-    position: fixed;
+    background: dodgerblue;
     width: 100%;
+    position: fixed;
     font-family: "Ubuntu", sans-serif;
-    padding: 30px 0;
-}
-.navbar.sticky {
-    padding: 7px 0;
-    background: rgb(23, 114, 204);
 }
 .navbar .max-width {
     display: flex;
@@ -30,253 +25,24 @@
     justify-content: space-between;
 }
 .navbar .logo a {
-    color: #ffff;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span {
-    color: dodgerblue;
-}
-
-.navbar.sticky .logo a span {
-    color: rgb(255, 255, 255);
-    transition: all 0.5s ease;
-}
-
 .navbar .menu li {
     list-style: none;
     display: inline-block;
+    font-weight: 500;
+    margin-left: 6px;
 }
-
 .navbar .menu li a {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
+    color: #fff;
 }
 
-.navbar .menu li a img {
-    width: 22px;
-}
+/* HOME SECTION */
 
-.navbar .menu li a:hover {
-    color: dodgerblue;
-}
-
-.navbar.sticky .menu li a:hover {
-    color: rgb(224, 224, 224);
-}
-
-/* Menu NavBar Button Styling */
-.menu-btn {
-    cursor: pointer;
-    display: none;
-}
-
-.fa-bars img {
-
-    width:25 px;
-    height: 25px;
-
-}
-
-/* HOME SECTION STYLING */
-
-.home {
-    display: flex;
-    background: url("./assets/code03.jpg") no-repeat center;
+.home{
+    display:flex;
+    background: url('./assets/code03.jpg') no-repeat center;
     height: 100vh;
-    color: #ffff;
-    min-height: 500px;
-    font-family: "Ubuntu", "sans-serif";
-}
-
-.home .max-width {
-    margin: auto 0 auto 40px;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: dodgerblue;
-    font-weight: 500;
-}
-
-.home .home-content a{
-    display: inline-block;
-    background: dodgerblue;
-    color: #ffff;
-    font-size: 25px;
-    padding: 12px 36px;
-    border-radius: 6px;
-    border: 2px solid dodgerblue;
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover{
-    color: dodgerblue;
-    background: none;
-}
-
-
-
-
-
-/* About section styling */
-section{
-    padding: 100px 0;
-}
-
-.about {
-    font-family: 'Poppins', 'sans-serif';
-
-}
-
-.about .title{
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu' 'sans-serif';
-}
-.about .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left:50%;
-    width: 221px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-.about .about-content .left img{
-    height: 400px;
-    width:400px;
-    
-    object-fit: cover;
-}
-
-/* Responsive media query start */
-@media (max-width: 1200px) {
-
-    .home .max-width{
-        margin-left: 0px;
-    }
-
-}
-@media (max-width: 1050px) {
-    .max-width {
-        padding: 0 50px;
-    }
-    .menu-btn {
-        
-        display: block;
-        z-index: 999;
-    }
-    .max-width {
-        padding: 0 50px;
-    }
-
- 
-
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: rgba(17, 17, 17, 0.966);
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left:0;
-    }
-
-    
-    
-    .navbar .menu li {
-        display: block;
-    }
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-        
-    }
-
-
-    .home .home-content .text-2 {
-        font-size: 70px;
-        
-    }
-    
-    .home .home-content .text-3 {
-        font-size: 35px;
-        
-    }
-
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px
-    }
-}
-
-@media (max-width: 565px) {
-    .navbar .menu.active li a{
-        
-        margin-top: 10px;
-    }
-
-    .home .home-content a{
-        font-size: 19px;
-        padding: 8px 20px
-    }
-    .max-width{
-        padding: 0 30px;
-        
-    }
-    .home .home-content .text-2 {
-        font-size: 45px;
-        
-    }
-    
-    .home .home-content .text-3 {
-        font-size: 27px;
-        
-    }
-
-    
-}
-
-@media (max-width: 300px) {
-
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2 {
-        font-size: 30px;
-        
-    }
-    
-    .home .home-content .text-3 {
-        font-size: 25px;
-        
-    }
 }
