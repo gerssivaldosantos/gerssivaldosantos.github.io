@@ -33,7 +33,7 @@
     list-style: none;
     display: inline-block;
     font-weight: 500;
-    margin-left: 6px;
+    margin-left: 25px;
 }
 .navbar .menu li a {
     color: #fff;
@@ -42,7 +42,16 @@
 /* HOME SECTION */
 
 .home{
+    color: #fff;
     display:flex;
     background: url('./assets/code03.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
 }
