@@ -14,15 +14,16 @@
   margin: auto;
 }
 .navbar {
-  padding: 36px 0;
+  padding: 30px 0;
   /* background: dodgerblue; */
   width: 100%;
+  z-index: 999;
   position: fixed;
   font-family: "Ubuntu", sans-serif;
   transition: all ease 0.3s;
 }
 .navbar.sticky {
-  padding: 10px 0;
+  padding: 15px 0;
   background: dodgerblue;
 }
 
@@ -35,6 +36,13 @@
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+}
+.navbar .logo a span {
+  color: dodgerblue;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span {
+  color: rgb(255, 255, 255);
 }
 .navbar .menu li {
   list-style: none;
@@ -55,12 +63,8 @@
 .navbar.sticky .menu li a:hover {
   color: rgb(221, 221, 221);
 }
-.navbar .logo a span {
-  color: dodgerblue;
-}
-.navbar.sticky .logo a span {
-  color: rgb(255, 255, 255);
-}
+
+
 /* Menu Button Styling */
 
 .menu-btn {
@@ -84,7 +88,8 @@
 }
 
 .home .max-width {
-  margin: auto 0 auto 40px;
+  width: 100%;
+  display: flex;
 }
 .home-content {
   font-family: "Ubuntu", sans-serif;
@@ -104,17 +109,27 @@
 
 .home .home-content .text-3 span {
   color: dodgerblue;
+  font-weight: 600;
 }
 
 /* Responsive media query start */
-
+@media (max-width: 1104px){
+  .home .max-width{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 991px){
+  .max-width{
+    padding: 0 50px;
+  }
+}
 @media (max-width: 947px) {
   .menu-btn {
     display: block;
     z-index: 999;
   }
 
-  .menu-btn i.active:before{
+  .menu-btn i.active:before {
     content: "\f00d";
   }
 
@@ -143,4 +158,13 @@
     display: inline-block;
     margin: 20px 0;
   }
+  .home .home-content .text-2 {
+    font-size: 70px;
+   
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+   
+  }
 }
+
