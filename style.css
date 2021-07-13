@@ -14,10 +14,11 @@
     margin: auto;
 }
 .navbar {
-    background: dodgerblue;
+    padding: 36px 0;
+    /* background: dodgerblue; */
     width: 100%;
     position: fixed;
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 .navbar .max-width {
     display: flex;
@@ -32,11 +33,32 @@
 .navbar .menu li {
     list-style: none;
     display: inline-block;
-    font-weight: 500;
-    margin-left: 25px;
+    
 }
 .navbar .menu li a {
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    /* The mouse change color while moviment*/
+    transition: color 0.3s ease;
+}
+/* Color of effetc the mouse */
+.navbar .menu li a:hover {
+    color: dodgerblue
+}
+
+.navbar .logo a span{
+    color: dodgerblue;
+}
+
+/* Menu Button Styling */
+
+.menu-btn{
+    color: #ffff;
+    font-size: 23px;
+    cursor: pointer;
+    display:none;
 }
 
 /* HOME SECTION */
@@ -54,4 +76,45 @@
 
 .home .max-width{
     margin: auto 0 auto 40px;
+}
+.home-content{
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: dodgerblue;
+}
+
+/* Responsive media query start */
+
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+
+    }
+    .navbar .menu{
+        position: fixed;
+        background-color: #111;
+        width: 100%;
+        height: 100vh;
+        left:0;
+        top:0;
+    }
+}   .navbar  .menu li a {
+    color: blueviolet;
+    display: inline-block;
+
 }
