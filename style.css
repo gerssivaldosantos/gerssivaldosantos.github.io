@@ -192,6 +192,7 @@ section .title::before {
 }
 .about .about-content .right{
   width: 55%;
+  
 }
 
 .about .about-content .left img {
@@ -215,6 +216,7 @@ section .title::before {
   text-align: justify;
 }
 
+
 .about .about-content .right a{
   display: inline-block;
   background: dodgerblue;
@@ -226,6 +228,7 @@ section .title::before {
   border: 2px solid dodgerblue;
   transition: all ease 0.3s;
   font-weight: 200;
+  
 }
 .about .about-content .right a:hover{
   color: dodgerblue;
@@ -322,6 +325,10 @@ section .title::before {
     font-size: 20px;
     padding: 8px 20px;
   }
+  .about .about-content .right a{
+    font-size: 20px;
+    padding: 8px 20px;
+  }
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
@@ -333,5 +340,9 @@ section .title::before {
   }
   .home .home-content a {
     font-size: 18px;
+  }
+  .about .about-content .right a {
+    font-size: 18px;
+    padding: 5px 15px;
   }
 }
