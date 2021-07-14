@@ -142,17 +142,50 @@
   background: none;
 }
 /* About Section Styling */
+section{
+  padding: 100px 0;
 
+}
 .about{
   font-family: 'Poppins', sans-serif;
 }
 .about .title{
+  position: relative;
+  text-align: center;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: dodgerblue;
+    transform: translateX(-50%);
+}
+.about .title::after{
+  content: "Who i am";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  font-size: 20px;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
 }
 .about .about-content .left img{
   width: 400px;
-  height: 600px;
+  height: 400px;
   object-fit: cover;
+  border-top-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 90px;
+  border-top-left-radius: 90px;
 }
 /* Responsive media query start */
 @media (max-width: 1104px) {
