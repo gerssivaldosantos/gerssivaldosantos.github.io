@@ -141,7 +141,19 @@
   color: dodgerblue;
   background: none;
 }
+/* About Section Styling */
 
+.about{
+  font-family: 'Poppins', sans-serif;
+}
+.about .title{
+  font-family: 'Ubuntu', sans-serif;
+}
+.about .about-content .left img{
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
 /* Responsive media query start */
 @media (max-width: 1104px) {
   .home .max-width {
@@ -230,6 +242,6 @@
   }
   .home .home-content a{
     font-size: 18px;
-    padding: 6px 15px;
+    
   }
 }
