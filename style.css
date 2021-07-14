@@ -112,6 +112,17 @@
   font-weight: 600;
 }
 
+.home .home-content a{
+  display: inline-block;
+  background: dodgerblue;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid dodgerblue;
+}
+
 /* Responsive media query start */
 @media (max-width: 1104px){
   .home .max-width{
@@ -168,3 +179,38 @@
   }
 }
 
+@media (max-width: 690px){
+  .max-width{
+    padding: 0 23px;
+  }
+
+  .home .home-content .text-2{
+    font-size: 60px;
+  }
+
+  .home .home-content .text-3{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px){
+
+  .home .home-content .text-2{
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3{
+    font-size: 27px;
+  }
+}
+
+@media (max-width: px){
+
+  .home .home-content .text-2{
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3{
+    font-size: 27px;
+  }
+}
