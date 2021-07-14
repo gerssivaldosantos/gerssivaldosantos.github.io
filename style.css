@@ -23,7 +23,7 @@
   transition: all ease 0.3s;
 }
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 8px 0;
   background: dodgerblue;
 }
 
@@ -56,6 +56,19 @@
   /* The mouse change color while moviment*/
   transition: color 0.3s ease;
 }
+
+.navbar .menu li a img{
+  margin-bottom: -2px;
+  width: 20px;
+  height: 20px;
+  transition: all ease 0.3s;
+}
+
+.navbar .menu li a img:hover{
+  filter: opacity(0.5) drop-shadow(0 0 0 dodgerblue);
+  
+}
+
 /* Color of effetc the mouse */
 .navbar .menu li a:hover {
   color: dodgerblue;
@@ -155,7 +168,7 @@
   }
   .navbar .menu {
     position: fixed;
-    background-color: rgba(17, 17, 17, 0.938);
+    background-color: rgba(17, 17, 17, 0.966);
     width: 100%;
     height: 100vh;
     left: -100%;
