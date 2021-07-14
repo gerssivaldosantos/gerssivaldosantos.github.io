@@ -93,7 +93,7 @@
   background: url("./assets/code03.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 109.5vh;
+  height: 105vh;
   min-height: 500px;
   font-family: "Ubuntu" sans-serif;
 }
@@ -147,9 +147,9 @@ section {
 .about {
   font-family: "Poppins", sans-serif;
   background: rgb(255, 255, 255);
-  border-top-right-radius: 100px;
-  border-top-left-radius: 100px;
-  margin-top: -75px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -50px;
 }
 .about .title {
   position: relative;
