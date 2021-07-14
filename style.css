@@ -57,16 +57,15 @@
   transition: color 0.3s ease;
 }
 
-.navbar .menu li a img{
+.navbar .menu li a img {
   margin-bottom: -2px;
   width: 20px;
   height: 20px;
   transition: all ease 0.3s;
 }
 
-.navbar .menu li a img:hover{
+.navbar .menu li a img:hover {
   filter: opacity(0.5) drop-shadow(0 0 0 dodgerblue);
-  
 }
 
 /* Color of effetc the mouse */
@@ -142,33 +141,32 @@
   background: none;
 }
 /* About Section Styling */
-section{
+section {
   padding: 100px 0;
-
 }
-.about{
-  font-family: 'Poppins', sans-serif;
+.about {
+  font-family: "Poppins", sans-serif;
 }
-.about .title{
+.about .title {
   position: relative;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
 }
 section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: dodgerblue;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: dodgerblue;
+  transform: translateX(-50%);
 }
-.about .title::after{
+.about .title::after {
   content: "Who i am";
   position: absolute;
   bottom: -10px;
@@ -178,7 +176,15 @@ section .title::before {
   background: #fff;
   transform: translateX(-50%);
 }
-.about .about-content .left img{
+
+.about .about-content{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about .about-content .left img {
   width: 400px;
   height: 400px;
   object-fit: cover;
@@ -240,11 +246,10 @@ section .title::before {
     font-size: 35px;
   }
 
-  .home .home-content a{
+  .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
-
 }
 
 @media (max-width: 690px) {
@@ -259,7 +264,7 @@ section .title::before {
   .home .home-content .text-3 {
     font-size: 32px;
   }
-  .home .home-content a{
+  .home .home-content a {
     font-size: 20px;
     padding: 8px 20px;
   }
@@ -273,8 +278,7 @@ section .title::before {
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .home .home-content a{
+  .home .home-content a {
     font-size: 18px;
-    
   }
 }
