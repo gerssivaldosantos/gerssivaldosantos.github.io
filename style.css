@@ -93,7 +93,7 @@
   background: url("./assets/code03.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 105vh;
+  height: 108.2vh;
   min-height: 500px;
   font-family: "Ubuntu" sans-serif;
 }
@@ -195,13 +195,10 @@ section .title::before {
 }
 
 .about .about-content .left img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
   object-fit: cover;
-  border-top-right-radius: 200px;
-  border-bottom-left-radius: 200px;
-  border-top-left-radius: 90px;
-  border-bottom-right-radius: 90px;
+  border-radius: 30px;
 }
 
 .about .about-content .right .text{
@@ -291,6 +288,22 @@ section .title::before {
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 800px;
+   
+  }
+  .about .about-content .column{
+    width: 50%;
+  }
+  .about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right{
+    flex: 100%;
+
   }
 }
 @media (max-width: 690px) {
