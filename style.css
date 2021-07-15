@@ -187,7 +187,7 @@ section .title::after {
 }
 /* About Section Styling */
 
-.about, .tech {
+.about{
   background: rgb(255, 255, 255);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -253,7 +253,6 @@ section .title::after {
 /* Services Styling  */
 
 .services{
-  
   color: #fff;
   background: #191919;
 }
@@ -267,12 +266,13 @@ section .title::after {
 }
 
 .services .serv-content .card{
+  height: 230px;
   width: calc(33% - 20px);
   background: #252525;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
-
+  cursor: pointer;
 }
 
 .services .serv-content .card i{
@@ -380,6 +380,18 @@ section .title::after {
   .about .about-content .right a {
     font-size: 20px;
     padding: 8px 20px;
+  }
+  .services .serv-content{
+    flex-direction: column;
+    
+
+  }
+
+  .services .serv-content .card{
+    width: calc(85% - 20px);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 500px) {
