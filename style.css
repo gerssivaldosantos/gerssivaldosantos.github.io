@@ -301,6 +301,29 @@ section .title::after {
   font-weight: 500;
   margin-top: 10px;
 }
+.services .services-button{
+  display: inline-block;
+  background: #292929;
+  margin: 0px 0px;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  
+  transition: all ease 0.3s;
+  font-weight: 200;
+}
+.services .services-button:hover {
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  background: none;
+}
+.services .button.wrapp{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
 
 /* Responsive media query*/
 @media (max-width: 1216px) {
@@ -433,6 +456,9 @@ section .title::after {
   .about .about-content .left img {
     width: 260px;
     height: 300px;
+  }
+  .services .services-button{
+    font-size: 19px;
   }
 }
 @media (max-width: 330px) {
