@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -93,7 +94,7 @@
   background: url("./assets/code03.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 108.2vh;
+  height: 108.9vh;
   min-height: 500px;
   font-family: "Ubuntu" sans-serif;
 }
@@ -145,7 +146,6 @@ section {
   padding: 100px 0;
 }
 .about {
-  font-family: "Poppins", sans-serif;
   background: rgb(255, 255, 255);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -187,37 +187,35 @@ section .title::before {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.about .about-content .left{
+.about .about-content .left {
   width: 45%;
 }
-.about .about-content .right{
+.about .about-content .right {
   width: 55%;
-  
 }
 
 .about .about-content .left img {
-  width: 350px;
-  height: 300px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
   border-radius: 30px;
+  margin-right: 15px;
 }
 
-.about .about-content .right .text{
+.about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 10px;
-
+  padding-right:
 }
 
-.about .about-content .right .text span{
+.about .about-content .right .text span {
   color: dodgerblue;
 }
-.about .about-content .right p{
+.about .about-content .right p {
   text-align: justify;
 }
 
-
-.about .about-content .right a{
+.about .about-content .right a {
   display: inline-block;
   background: dodgerblue;
   color: #fff;
@@ -228,14 +226,20 @@ section .title::before {
   border: 2px solid dodgerblue;
   transition: all ease 0.3s;
   font-weight: 200;
-  
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover {
   color: dodgerblue;
   background: none;
 }
 
 /* Responsive media query start */
+@media (max-width: 1216px) {
+  .about .about-content .left img {
+    width: 350px;
+    height: 350px;
+
+  }
+}
 @media (max-width: 1104px) {
   .home .max-width {
     margin-left: 0px;
@@ -294,19 +298,17 @@ section .title::before {
   }
   .max-width {
     max-width: 800px;
-   
   }
-  .about .about-content .column{
+  .about .about-content .column {
     width: 50%;
   }
-  .about .about-content .left{
+  .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about-content .right{
+  .about .about-content .right {
     flex: 100%;
-
   }
 }
 @media (max-width: 690px) {
@@ -325,7 +327,7 @@ section .title::before {
     font-size: 20px;
     padding: 8px 20px;
   }
-  .about .about-content .right a{
+  .about .about-content .right a {
     font-size: 20px;
     padding: 8px 20px;
   }
