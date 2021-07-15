@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  
 }
 
 /* NAVIGATION BAR */
@@ -141,17 +141,13 @@
   color: dodgerblue;
   background: none;
 }
-/* About Section Styling */
+/* General Styling */
+
 section {
   padding: 100px 0;
 }
-.about {
-  background: rgb(255, 255, 255);
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  margin-top: -50px;
-}
-.about .title {
+
+section .title {
   position: relative;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
@@ -170,15 +166,28 @@ section .title::before {
   background: dodgerblue;
   transform: translateX(-50%);
 }
-.about .title::after {
-  content: "Who i am";
+section .title::after {
   position: absolute;
   bottom: -10px;
   left: 50%;
   font-size: 20px;
-  padding: 5px;
+  padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
+}
+/* About Section Styling */
+
+.about, .tech {
+  background: rgb(255, 255, 255);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -50px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.about .title::after{
+  content: "Who i am";;
 }
 
 .about .about-content {
@@ -205,7 +214,6 @@ section .title::before {
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
-  padding-right:
 }
 
 .about .about-content .right .text span {
@@ -232,11 +240,43 @@ section .title::before {
   background: none;
 }
 
+/* Services Styling  */
+
+.services{
+  
+  color: #fff;
+  background: #191919;
+}
+
+.services .title::before{
+  background: dodgerblue;
+}
+.services .title::after{
+  content: "What i do ?";
+  background: #191919;
+}
+
+.services .serv-content .card{
+  width: calc(33% - 20px);
+  background: #252525;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+
+}
+
+.services .serv-content .card i{
+  font-size: 50px;
+  color: dodgerblue;
+}
+
+
 /* Responsive media query start */
 @media (max-width: 1216px) {
   .about .about-content .left img {
     width: 350px;
     height: 350px;
+    margin-left: 13px;
 
   }
 }
@@ -346,5 +386,21 @@ section .title::before {
   .about .about-content .right a {
     font-size: 18px;
     padding: 5px 15px;
+  }
+}
+
+@media (max-width: 370px) {
+  .about .about-content .left img {
+    width: 260px;
+    height: 300px;}
+}
+
+
+@media (max-width: 315px) {
+  .home .home-content .text-2 {
+    font-size: 45px;
+  }
+  .home .home-content .text-3 {
+    font-size: 23px;
   }
 }
