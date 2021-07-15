@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  
 }
 
 /* NAVIGATION BAR */
@@ -179,15 +178,15 @@ section .title::after {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 /* About Section Styling */
 
-.about{
+.about {
   background: rgb(255, 255, 255);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -195,12 +194,12 @@ section .title::after {
   font-family: "Poppins", sans-serif;
 }
 
-
-.about .title::after{
-  content: "Who i am";;
+.about .title::after {
+  content: "Who i am";
 }
 
-.about .about-content, .services .serv-content {
+.about .about-content,
+.services .serv-content {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -252,42 +251,63 @@ section .title::after {
 
 /* Services Styling  */
 
-.services{
+.services {
   color: #fff;
   background: #191919;
+  font-family: "Poppins", sans-serif;
 }
 
-.services .title::before{
+.services .title::before {
   background: dodgerblue;
 }
-.services .title::after{
+.services .title::after {
   content: "What i do ?";
   background: #191919;
 }
 
-.services .serv-content .card{
+.services .serv-content .card {
   height: 230px;
   width: calc(33% - 20px);
   background: #252525;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 9px;
   padding: 20px 25px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+  background: dodgerblue;
+  color: #fff;
 }
 
-.services .serv-content .card i{
+
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  transition: all 0.3s ease;
   font-size: 50px;
   color: dodgerblue;
 }
+.services .serv-content .card :hover i{
+  color: #fff;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
 
-
-/* Responsive media query start */
+/* Responsive media query*/
 @media (max-width: 1216px) {
   .about .about-content .left img {
     width: 350px;
     height: 350px;
     margin-left: 13px;
-
   }
 }
 @media (max-width: 1104px) {
@@ -360,6 +380,16 @@ section .title::after {
   .about .about-content .right {
     flex: 100%;
   }
+
+  .services .serv-content {
+    flex-direction: column;
+  }
+
+  .services .serv-content .card {
+    width: calc(85% - 20px);
+    margin-bottom: 25px;
+  
+  }
 }
 @media (max-width: 690px) {
   .max-width {
@@ -380,18 +410,6 @@ section .title::after {
   .about .about-content .right a {
     font-size: 20px;
     padding: 8px 20px;
-  }
-  .services .serv-content{
-    flex-direction: column;
-    
-
-  }
-
-  .services .serv-content .card{
-    width: calc(85% - 20px);
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
   }
 }
 @media (max-width: 500px) {
@@ -414,15 +432,19 @@ section .title::after {
 @media (max-width: 370px) {
   .about .about-content .left img {
     width: 260px;
-    height: 300px;}
+    height: 300px;
+  }
 }
-
-
-@media (max-width: 315px) {
+@media (max-width: 330px) {
   .home .home-content .text-2 {
     font-size: 45px;
   }
   .home .home-content .text-3 {
     font-size: 23px;
+  }
+
+  .services .serv-content .card {
+
+    height: 290px;
   }
 }
