@@ -175,6 +175,16 @@ section .title::after {
   background: #fff;
   transform: translateX(-50%);
 }
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 /* About Section Styling */
 
 .about, .tech {
@@ -190,7 +200,7 @@ section .title::after {
   content: "Who i am";;
 }
 
-.about .about-content {
+.about .about-content, .services .serv-content {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
