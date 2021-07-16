@@ -276,7 +276,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-  background: dodgerblue;
+  background: rgb(20, 87, 155);
   color: #fff;
 }
 
@@ -287,10 +287,11 @@ section .title::after {
 .services .serv-content .card:hover .box{
   transition: all 0.3s ease;
   transform: scale(1.05);
+  
 }
 .services .serv-content .card i {
   transition: all 0.3s ease;
-  font-size: 50px;
+  font-size: 40px;
   color: dodgerblue;
 }
 .services .serv-content .card :hover i{
@@ -309,6 +310,7 @@ section .title::after {
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
+  border: 2px solid #292929;
   border-radius: 6px;
   
   transition: all ease 0.3s;
@@ -451,15 +453,20 @@ section .title::after {
     padding: 5px 15px;
   }
 }
-
+@media (max-width: 425px){
+  .services .services-button{
+    font-size: 17px;
+    padding: 12px 0px;
+    width: 80%;
+    text-align: center;
+  }
+}
 @media (max-width: 370px) {
   .about .about-content .left img {
     width: 260px;
     height: 300px;
   }
-  .services .services-button{
-    font-size: 19px;
-  }
+
 }
 @media (max-width: 330px) {
   .home .home-content .text-2 {
