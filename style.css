@@ -427,8 +427,13 @@ section .title::after {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border: 5px solid dodgerblue;
+  border: 2px solid dodgerblue;
   border-radius: 50%;
+  transition: all ease 0.3s;
+}
+.projects .carousel .card:hover img{
+  border: 2px solid rgb(255, 255, 255);
+  transition: all ease 0.3s;
 }
 .projects .carousel{
   display: flex;
@@ -437,7 +442,33 @@ section .title::after {
   background: #222;
   border-radius: 9px;
   padding: 25px 35px;
+  text-align: center;
+  height: 300px;
+  transition: all 0.3s ease;
 
+}
+
+.projects .carousel .card:hover{
+  transition: all 0.3s ease;
+  background: rgb(25, 110, 194);
+  color: #fff;
+}
+.projects .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 10px 0;
+  color: #fff;
+  transition: all 0.3s ease;
+
+}
+
+
+.projects .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 /* Responsive media query*/
 
