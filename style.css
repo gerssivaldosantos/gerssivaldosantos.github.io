@@ -143,6 +143,7 @@
 /* General Styling */
 
 section {
+  font-family: 'Poppins', sans-serif;
   padding: 100px 0;
 }
 
@@ -275,26 +276,24 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.services .serv-content .card:hover {
   background: rgb(20, 87, 155);
   color: #fff;
 }
 
-
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.services .serv-content .card:hover .box {
   transition: all 0.3s ease;
   transform: scale(1.05);
-  
 }
 .services .serv-content .card i {
   transition: all 0.3s ease;
   font-size: 40px;
   color: dodgerblue;
 }
-.services .serv-content .card :hover i{
+.services .serv-content .card :hover i {
   color: #fff;
 }
 .services .serv-content .card .text {
@@ -302,7 +301,7 @@ section .title::after {
   font-weight: 500;
   margin-top: 10px;
 }
-.services .services-button{
+.services .services-button {
   display: inline-block;
   background: #292929;
   margin: 0px 0px;
@@ -312,7 +311,7 @@ section .title::after {
   margin-top: 20px;
   border: 2px solid #292929;
   border-radius: 6px;
-  
+
   transition: all ease 0.3s;
   font-weight: 200;
 }
@@ -321,7 +320,7 @@ section .title::after {
   color: dodgerblue;
   background: none;
 }
-.services .button.wrapp{
+.services .button.wrapp {
   padding: 20px 0px;
   display: flex;
   justify-content: center;
@@ -329,14 +328,14 @@ section .title::after {
 
 /* Skills styling */
 
-.skills{
-  font-family: 'Poppins', sans-serif;
+.skills {
+  font-family: "Poppins", sans-serif;
 }
 .skills .title::after {
   content: "What i know";
   background: #ffffff;
 }
-.skills .skills-content .left p{
+.skills .skills-content .left p {
   text-align: justify;
 }
 .skills .skills-content .left a {
@@ -351,43 +350,43 @@ section .title::after {
   border: 2px solid dodgerblue;
   transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+.skills .skills-content .left a:hover {
   background: none;
   color: dodgerblue;
   transition: all 0.3s ease;
 }
-.skills .skills-content .column{
+.skills .skills-content .column {
   width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text{
+.skills .skills-content .left .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.skills .skills-content .right .bars{
+.skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
 
-.skills .skills-content .right .info{
+.skills .skills-content .right .info {
   display: flex;
   align-items: center;
   margin-bottom: 7px;
   justify-content: space-between;
 }
-.skills .skills-content .right span{
+.skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
 }
-.skills .skills-content .right .line{
+.skills .skills-content .right .line {
   border-radius: 15px;
   height: 5px;
   width: 100%;
   background: slategrey;
   position: relative;
 }
-.skills .skills-content .right .line::before{
+.skills .skills-content .right .line::before {
   border-radius: 15px;
   content: "";
   position: absolute;
@@ -398,17 +397,47 @@ section .title::after {
   background: dodgerblue;
 }
 
-.skills .skills-content .right .line.python::before{
+.skills .skills-content .right .line.python::before {
   width: 70%;
 }
-.skills .skills-content .right .line.javascript::before{
+.skills .skills-content .right .line.javascript::before {
   width: 60%;
 }
-.skills .skills-content .right .line.html::before{
+.skills .skills-content .right .line.html::before {
   width: 55%;
 }
-.skills .skills-content .right .line.css::before{
+.skills .skills-content .right .line.css::before {
   width: 50%;
+}
+
+.skills .skills-content .right .line.mysql::before {
+  width: 35%;
+}
+
+/* Projects section styling */
+.projects{
+  color: #fff;
+  background: #191919;
+}
+.projects .title::after{
+  background: #191919;
+  content: "what i created";
+}
+.projects .carousel .card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid dodgerblue;
+  border-radius: 50%;
+}
+.projects .carousel{
+  display: flex;
+}
+.projects .carousel .card{
+  background: #222;
+  border-radius: 9px;
+  padding: 25px 35px;
+
 }
 /* Responsive media query*/
 
@@ -497,7 +526,6 @@ section .title::after {
   .services .serv-content .card {
     width: calc(85% - 20px);
     margin-bottom: 25px;
-  
   }
 }
 @media (max-width: 690px) {
@@ -520,10 +548,10 @@ section .title::after {
     font-size: 20px;
     padding: 8px 20px;
   }
-  .skills .skills-content .column{
+  .skills .skills-content .column {
     width: 100%;
   }
-  .skills .skills-content .left{
+  .skills .skills-content .left {
     margin-bottom: 25px;
   }
 }
@@ -543,8 +571,8 @@ section .title::after {
     padding: 5px 15px;
   }
 }
-@media (max-width: 425px){
-  .services .services-button{
+@media (max-width: 425px) {
+  .services .services-button {
     font-size: 17px;
     padding: 12px 0px;
     width: 80%;
@@ -556,7 +584,9 @@ section .title::after {
     width: 260px;
     height: 300px;
   }
-
+  .projects .title::after{
+    font-size: 17px;
+  }
 }
 @media (max-width: 330px) {
   .home .home-content .text-2 {
@@ -567,7 +597,6 @@ section .title::after {
   }
 
   .services .serv-content .card {
-
     height: 290px;
   }
 }
