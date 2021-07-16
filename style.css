@@ -478,6 +478,30 @@ section .title::after {
   list-style: none;
   color: #fff;
 }
+
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+
+}
+.owl-dot{
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid dodgerblue !important;
+  transition: all ease 0.3s;
+}
+
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot:hover, .owl-dot.active{
+  background: dodgerblue !important;
+}
 /* Responsive media query*/
 
 @media (max-width: 1216px) {
