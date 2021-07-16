@@ -453,6 +453,10 @@ section .title::after {
   background: rgb(25, 110, 194);
   color: #fff;
 }
+.projects .carousel .card:hover .box{
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
 .projects .carousel .card .text{
   font-size: 25px;
   font-weight: 500;
@@ -469,6 +473,10 @@ section .title::after {
   align-items: center;
   justify-content: center;
   
+}
+.projects .carousel a{
+  list-style: none;
+  color: #fff;
 }
 /* Responsive media query*/
 

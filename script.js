@@ -20,7 +20,7 @@ $(document).ready(function () {
   $('.carousel').owlCarousel({
       margin: 20,
       loop: true,
-      autoplayTimeOut: 2000,
+      autoplayTimeOut: 1200,
       autoplayHoverPause: true,
       responsive:{
           0:{
@@ -34,7 +34,7 @@ $(document).ready(function () {
         1000:{
             items: 3,
             nav: false
-        }
+        },
       }
 
   })
