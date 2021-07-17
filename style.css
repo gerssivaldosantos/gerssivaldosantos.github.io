@@ -536,6 +536,27 @@ section .title::after {
 .contact .contact-content .left .icons .row .info .head{
   font-weight: 500;
 }
+
+
+
+/* Footer Styling */
+footer {
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+  background: #121212;
+  justify-content: center;
+}
+
+footer p{
+  color: #fff;
+}
+
+footer p span{
+  color: dodgerblue;
+}
 /* Responsive media query*/
 
 @media (max-width: 1216px) {
@@ -664,7 +685,9 @@ section .title::after {
   .contact .contact-content .column{
     width: calc(100% - 0px);
   }
-
+  footer p{
+    font-size: 12px;
+  }
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
