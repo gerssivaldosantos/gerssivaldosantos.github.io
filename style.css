@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAVIGATION BAR */
 .max-width {
   max-width: 1300px;
@@ -83,6 +87,29 @@
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: dodgerblue;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 999;
+  font-size: 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* HOME SECTION */
@@ -517,7 +544,7 @@ section .title::after {
   text-align: justify;
   margin-bottom: 15px;
 }
-.contact .contact-content .left .icons{
+.contact .contact-content .left .icons {
   margin-bottom: 25px;
 }
 .contact .contact-content .left .icons .row {
@@ -536,7 +563,6 @@ section .title::after {
   color: rgb(5, 26, 48);
 }
 
-
 .contact .contact-content .right form .fields {
   display: flex;
 }
@@ -547,14 +573,14 @@ section .title::after {
   margin-bottom: 15px;
 }
 
-.contact .right form .textarea{
+.contact .right form .textarea {
   height: 110px;
 }
 
-.contact .right form .name{
+.contact .right form .name {
   margin-right: 10px;
 }
-.contact .right form .email{
+.contact .right form .email {
   margin-left: 10px;
 }
 .contact .right form .field input,
@@ -566,10 +592,10 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   resize: none;
 }
-.contact .right .button-area button{
+.contact .right .button-area button {
   padding: 13px 10px;
   background: dodgerblue;
   border-radius: 7px;
@@ -577,9 +603,10 @@ section .title::after {
   font-size: 19px;
   border: 2px solid dodgerblue;
   transition: ease 0.3s all;
+  cursor: pointer;
 }
 
-.contact .right .button-area button:hover{
+.contact .right .button-area button:hover {
   transition: 0.3 all ease;
   background: none;
   border: 2px solid dodgerblue;
