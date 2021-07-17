@@ -534,7 +534,8 @@ section .title::after {
   color: dodgerblue;
 }
 .contact .contact-content .left .icons .row .info .head{
-  font-weight: 500;
+  font-weight: 600;
+  color: rgb(5, 26, 48);
 }
 
 
