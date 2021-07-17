@@ -485,8 +485,8 @@ section .title::after {
 
 }
 .owl-dot{
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
   margin: 0 5px;
   outline: none!important;
   border-radius: 50%;
@@ -495,12 +495,46 @@ section .title::after {
 }
 
 .owl-dot.active{
-  width: 35px;
+  width: 50px;
   border-radius: 14px;
 }
 
 .owl-dot:hover, .owl-dot.active{
   background: dodgerblue !important;
+}
+
+/* Contact section Styling */
+.contact .title::after{
+  content: 'Say "Hello" ';
+}
+.contact .contact-content .column{
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .left .text{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.contact .contact-content .left .icons .row{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact .contact-content .left .icons .row i{
+  padding-right: 20px;
+  font-size: 25px;
+  color: dodgerblue;
+}
+.contact .contact-content .left .icons .row .info .head{
+  font-weight: 500;
 }
 /* Responsive media query*/
 
@@ -617,6 +651,20 @@ section .title::after {
   .skills .skills-content .left {
     margin-bottom: 25px;
   }
+  .owl-dot{
+    height: 15px;
+    width: 15px;
+
+  }
+  
+  .owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+  }
+  .contact .contact-content .column{
+    width: calc(100% - 0px);
+  }
+
 }
 @media (max-width: 500px) {
   .home .home-content .text-2 {
