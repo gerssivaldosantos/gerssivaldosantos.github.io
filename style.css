@@ -205,7 +205,6 @@ section .title::after {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +282,7 @@ section .title::after {
   color: #fff;
   background: #191919;
   font-family: "Poppins", sans-serif;
+  
 }
 
 .services .title::before {
@@ -353,96 +353,11 @@ section .title::after {
   justify-content: center;
 }
 
-/* Skills styling */
 
-.skills {
-  font-family: "Poppins", sans-serif;
-}
-.skills .title::after {
-  content: "What i know";
-  background: #ffffff;
-}
-.skills .skills-content .left p {
-  text-align: justify;
-}
-.skills .skills-content .left a {
-  display: inline-block;
-  background: dodgerblue;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 7px;
-  border: 2px solid dodgerblue;
-  transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover {
-  background: none;
-  color: dodgerblue;
-  transition: all 0.3s ease;
-}
-.skills .skills-content .column {
-  width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-  justify-content: space-between;
-}
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-.skills .skills-content .right .line {
-  border-radius: 15px;
-  height: 5px;
-  width: 100%;
-  background: slategrey;
-  position: relative;
-}
-.skills .skills-content .right .line::before {
-  border-radius: 15px;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  left: 0;
-  top: 0;
-  background: dodgerblue;
-}
-
-.skills .skills-content .right .line.python::before {
-  width: 70%;
-}
-.skills .skills-content .right .line.javascript::before {
-  width: 60%;
-}
-.skills .skills-content .right .line.html::before {
-  width: 55%;
-}
-.skills .skills-content .right .line.css::before {
-  width: 50%;
-}
-
-.skills .skills-content .right .line.mysql::before {
-  width: 35%;
-}
 
 /* Projects section styling */
 .projects {
+  margin-top: -120px;
   color: #fff;
   background: #191919;
 }
@@ -740,10 +655,10 @@ footer p span {
     font-size: 20px;
     padding: 8px 20px;
   }
-  .skills .skills-content .column {
+ .column {
     width: 100%;
   }
-  .skills .skills-content .left {
+.left {
     margin-bottom: 25px;
   }
   .owl-dot {
