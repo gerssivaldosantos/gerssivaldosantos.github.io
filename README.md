@@ -16,8 +16,7 @@ In this application I did not use a database, all the data shown in the interfac
 ### Main technologies used
   <p> 
     
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) - Javascript is a very popular high-level programming language that can be 
-applied in a variety of scenarios
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/) - JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - The HyperText Markup Language, or HTML is the standard markup language for documents designed to 
 be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
