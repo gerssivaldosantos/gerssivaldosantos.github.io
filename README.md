@@ -1,7 +1,8 @@
 <h1 align="center"> My Personal Portfolio </h1>
-<h5 align="center" font-weigth="bold">  It was created without following any specific tutorial, I tried to make my own version of the app, with the components organized my way, you will not find this code anywhere else on the internet except here. Both the mistakes and the successes are entirely mine</h5>
-<p align="justify">   This application was made for the purpose of study, feel free to learn from it viewing, just as I learned when developing it. In it you learn about flexbox design, compounding, props, state management with hooks, animations and more. 
-In this application I did not use a database, all the data shown in the interface are copied from the original application or provided by the user in one of the home screens</p>
+<h5 align="center" font-weigth="bold">  This is my portfolio, in it you will find a little about me, a summary of my main projects and contact channels</h5>
+<p align="justify"> 
+
+Made with popular technologies on the market and fully responsive, I based myself on the HTML, CSS, JS youtube tutorial "Coding Nepal" </p>
 <img src="https://img.shields.io/static/v1?label=HTML&message=CSS&color=blue&style=for-the-badge&logo=HTML"/>
 <p align="center" >
 
