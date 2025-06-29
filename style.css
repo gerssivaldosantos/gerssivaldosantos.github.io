@@ -644,12 +644,55 @@ section {
   font-size: var(--font-size-sm);
   font-weight: 500;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+}
+
+.skill-item i {
+  font-size: 1rem;
+  min-width: 16px;
+  text-align: center;
+}
+
+/* Technology-specific icon colors */
+.skill-item .fa-react {
+  color: #61dafb;
+}
+
+.skill-item .fa-vuejs {
+  color: #4fc08d;
+}
+
+.skill-item .fa-js-square {
+  color: #f7df1e;
+}
+
+.skill-item .fa-node-js {
+  color: #339933;
+}
+
+.skill-item .fa-docker {
+  color: #2496ed;
+}
+
+.skill-item .fa-aws {
+  color: #ff9900;
+}
+
+.skill-item .fa-git-alt {
+  color: #f05032;
 }
 
 .skill-item:hover {
   background: var(--primary-color);
   color: white;
   transform: scale(1.05);
+}
+
+.skill-item:hover i {
+  color: white;
 }
 
 /* Contact Section */
