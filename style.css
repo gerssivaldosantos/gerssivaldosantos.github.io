@@ -648,6 +648,9 @@ section {
   align-items: center;
   gap: var(--spacing-xs);
   cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .skill-item i {
@@ -692,6 +695,17 @@ section {
 }
 
 .skill-item:hover i {
+  color: white;
+}
+
+.skill-item:focus {
+  background: var(--primary-color);
+  color: white;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.skill-item:focus i {
   color: white;
 }
 
