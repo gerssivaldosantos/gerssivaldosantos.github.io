@@ -1,0 +1,25 @@
+{
+  "name": "Gerssivaldo Santos - Software Engineer",
+  "short_name": "Gerssivaldo Santos",
+  "description": "Software Engineer specializing in React, Next.js, and React Native. Experienced in AI-driven solutions and scalable web applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "assets/perfil.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/perfil.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+} 
