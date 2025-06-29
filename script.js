@@ -69,9 +69,7 @@ class Portfolio {
       this.handleScroll();
     });
 
-    // Contact form
-    const contactForm = document.getElementById('contact-form');
-    contactForm?.addEventListener('submit', (e) => this.handleFormSubmit(e));
+
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => this.handleKeydown(e));
@@ -328,38 +326,7 @@ class Portfolio {
     setTimeout(type, 2000);
   }
 
-  // Form Handling
-  async handleFormSubmit(e) {
-    e.preventDefault();
-    
-    const form = e.target;
-    const formData = new FormData(form);
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
 
-    // Show loading state
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    form.classList.add('loading');
-
-    try {
-      // Simulate form submission (replace with actual endpoint)
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Success feedback
-      this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-      form.reset();
-      
-    } catch (error) {
-      // Error feedback
-      this.showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-    } finally {
-      // Reset button state
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-      form.classList.remove('loading');
-    }
-  }
 
   // Notification System
   showNotification(message, type = 'info') {
