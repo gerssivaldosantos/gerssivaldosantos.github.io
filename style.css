@@ -256,7 +256,7 @@ body {
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 2px);
 }
 
 .hamburger.active .bar:nth-child(2) {
