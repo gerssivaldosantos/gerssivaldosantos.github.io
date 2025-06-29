@@ -546,7 +546,6 @@ class AccessibilityManager {
       position: absolute;
       top: -40px;
       left: 6px;
-      background: var(--primary-color);
       color: white;
       padding: 8px;
       text-decoration: none;
